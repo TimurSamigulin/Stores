@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MainActivity</string>
+    <string name="sort_name">По имени</string>
+    <string name="sort_price">По цене</string>
+    <string name="sort_discount">По скидке</string>
+    <string name="toolbar_fav">Избранное</string>
+    <string name="nav_all_store">Все магазины</string>
+    <string name="nav_fav_store">Избранные магазины</string>
+    <string name="nav_fav_products">Корзина</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_bag">bag</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="map">Карта</string>
+</resources>

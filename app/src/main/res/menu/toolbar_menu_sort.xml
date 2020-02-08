@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/sort_name"
+            android:title="@string/sort_name"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/sort_price"
+            android:title="@string/sort_price"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/sort_discount"
+            android:title="@string/sort_discount"
+            app:showAsAction="never"/>
+    </group>
+    <item
+        android:id="@+id/open_map"
+        android:icon="@drawable/ic_map_white_24dp"
+        app:showAsAction="ifRoom"
+        android:title="@string/map" />
+</menu>
