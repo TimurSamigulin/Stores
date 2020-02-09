@@ -38,6 +38,8 @@ class MainActivity : AppCompatActivity(), StoreAdapter.OnBtnClickListener, Navig
 
         intent.putExtra("EXTRA_ID", store.id)
         intent.putExtra("EXTRA_TITLE", store.title)
+        intent.putExtra("EXTRA_X", store.x)
+        intent.putExtra("EXTRA_Y", store.y)
         intent.putExtra("EXTRA_API", store.apiHref)
         startActivity(intent)
     }

@@ -38,6 +38,8 @@ class ProductActivity: AppCompatActivity(), ProductAdapter.OnBtnClickListener {
 
     private lateinit var model: ProductViewModel
     lateinit var storeTitle: String
+    var x: Double = 0.0
+    var y: Double = 0.0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,6 +48,8 @@ class ProductActivity: AppCompatActivity(), ProductAdapter.OnBtnClickListener {
 
         val intent = intent
         storeTitle = intent.getStringExtra("EXTRA_TITLE")
+        x = intent.getDoubleExtra("EXTRA_X", 0.0)
+        y = intent.getDoubleExtra("EXTRA_Y", 0.0)
         setTitle(storeTitle)
 
         val productAdapter: ProductAdapter = ProductAdapter(this)
@@ -86,8 +90,10 @@ class ProductActivity: AppCompatActivity(), ProductAdapter.OnBtnClickListener {
                 return true
             }
             R.id.open_map -> {
-                return true
                 val intent = Intent(this, MapsActivity::class.java)
+                intent.putExtra("EXTRA_X", x)
+                intent.putExtra("EXTRA_Y", y)
+                intent.putExtra("EXTRA_TITLE", storeTitle)
                 startActivity(intent)
                 return true
             }

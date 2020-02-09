@@ -28,6 +28,8 @@ class StoreRepository(private val storeDAO: StoreDAO) {
                             cElement.description,
                             cElement.icon,
                             false,
+                            cElement.x,
+                            cElement.y,
                             cElement.apiHref
                         )
 
