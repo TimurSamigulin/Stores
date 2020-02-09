@@ -12,7 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mainactivity.R
-import com.example.mainactivity.adapter.ProductAdapter
+import com.example.mainactivity.util.adapter.ProductAdapter
 import com.example.mainactivity.room.entity.Product
 import com.example.mainactivity.viewmodel.ProductViewModel
 import com.google.android.material.navigation.NavigationView
@@ -31,7 +31,8 @@ class BagActivity: AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
         setSupportActionBar(toolbar_actionbar)
         setTitle("Корзина")
 
-        val productAdapter: ProductAdapter = ProductAdapter(this)
+        val productAdapter: ProductAdapter =
+            ProductAdapter(this)
 
         model = ViewModelProvider(this).get(ProductViewModel::class.java)
 

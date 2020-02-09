@@ -5,7 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.viewModelScope
-import com.example.mainactivity.retrofit.ApiService
+import com.example.mainactivity.util.retrofit.ApiService
 import com.example.mainactivity.room.dao.StoreDAO
 import com.example.mainactivity.room.database.StoreDatabase
 import com.example.mainactivity.room.entity.Store

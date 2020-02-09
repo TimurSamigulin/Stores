@@ -3,7 +3,7 @@ package com.example.mainactivity.room.repository
 import androidx.annotation.WorkerThread
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.mainactivity.retrofit.ApiService
+import com.example.mainactivity.util.retrofit.ApiService
 import com.example.mainactivity.room.dao.ProductDAO
 import com.example.mainactivity.room.entity.Product
 import kotlinx.coroutines.Dispatchers

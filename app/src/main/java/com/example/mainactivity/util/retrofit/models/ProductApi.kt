@@ -1,4 +1,4 @@
-package com.example.mainactivity.retrofit.models
+package com.example.mainactivity.util.retrofit.models
 
 class ProductApi(val title: String,
                  val description: String,

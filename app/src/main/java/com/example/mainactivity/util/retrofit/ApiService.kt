@@ -1,8 +1,8 @@
-package com.example.mainactivity.retrofit
+package com.example.mainactivity.util.retrofit
 
 import com.example.mainactivity.BuildConfig
-import com.example.mainactivity.retrofit.models.ProductApi
-import com.example.mainactivity.retrofit.models.StoreApi
+import com.example.mainactivity.util.retrofit.models.ProductApi
+import com.example.mainactivity.util.retrofit.models.StoreApi
 import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import kotlinx.coroutines.Deferred

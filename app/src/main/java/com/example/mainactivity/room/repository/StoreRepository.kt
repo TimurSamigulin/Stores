@@ -2,7 +2,7 @@ package com.example.mainactivity.room.repository
 
 import androidx.annotation.WorkerThread
 import androidx.lifecycle.LiveData
-import com.example.mainactivity.retrofit.ApiService
+import com.example.mainactivity.util.retrofit.ApiService
 import com.example.mainactivity.room.dao.StoreDAO
 import com.example.mainactivity.room.database.ProductDatabase
 import com.example.mainactivity.room.entity.Store

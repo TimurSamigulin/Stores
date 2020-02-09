@@ -12,7 +12,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mainactivity.R
-import com.example.mainactivity.adapter.ProductAdapter
+import com.example.mainactivity.util.adapter.ProductAdapter
 import com.example.mainactivity.room.entity.Product
 import com.example.mainactivity.viewmodel.ProductViewModel
 import kotlinx.android.synthetic.main.toolbar.*
@@ -52,7 +52,8 @@ class ProductActivity: AppCompatActivity(), ProductAdapter.OnBtnClickListener {
         y = intent.getDoubleExtra("EXTRA_Y", 0.0)
         setTitle(storeTitle)
 
-        val productAdapter: ProductAdapter = ProductAdapter(this)
+        val productAdapter: ProductAdapter =
+            ProductAdapter(this)
 
         val recyclerView: RecyclerView = findViewById(R.id.product_recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(this)

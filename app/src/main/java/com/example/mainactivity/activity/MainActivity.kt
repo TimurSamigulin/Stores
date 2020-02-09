@@ -14,8 +14,8 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mainactivity.R
-import com.example.mainactivity.adapter.StoreAdapter
-import com.example.mainactivity.retrofit.ApiService
+import com.example.mainactivity.util.adapter.StoreAdapter
+import com.example.mainactivity.util.retrofit.ApiService
 import com.example.mainactivity.room.entity.Store
 import com.example.mainactivity.viewmodel.MainViewModel
 import com.google.android.material.navigation.NavigationView
@@ -53,7 +53,8 @@ class MainActivity : AppCompatActivity(), StoreAdapter.OnBtnClickListener, Navig
 
 
 
-        val storeAdapter: StoreAdapter = StoreAdapter(this)
+        val storeAdapter: StoreAdapter =
+            StoreAdapter(this)
 
         val recyclerView: RecyclerView = findViewById(R.id.store_recycler_view)
         recyclerView.layoutManager = GridLayoutManager(this, 2)
